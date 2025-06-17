@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-:root{
+:root {
     --padding-container: 100px 0;
-    --color-title: #001a49;
+    --color-title: #001A49;
 }
 
-body{
-    font-family: "Dosis", sans-serif;;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -17,29 +17,30 @@ body{
     padding: var(--padding-container);
 }
 
-.hero{
+.hero {
     width: 100%;
     height: 100vh;
     min-height: 600px;
     max-height: 800px;
     position: relative;
     display: grid;
-    grid-template-rows: 100px lfr;
+    grid-template-rows: 100px 1fr;
     color: #fff;
 }
 
-.hero::before{
+.hero::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #000 0%, #000 100%), url('../imagenes/fondo.png');
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagenes/fondo.png');
     background-size: cover;
-    clip-path: polygon(50% 90%, 100% 67%, 100% 0, 0 0, 0 68%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
 }
+
 
 /* Nav */
 
